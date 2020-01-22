@@ -28,3 +28,12 @@ CREATE TABLE `type` (
 )
     ENGINE = InnoDB
     CHARSET = utf8;
+
+CREATE TABLE `generation` (
+    id                  INT(11) UNSIGNED    NOT NULL AUTO_INCREMENT,
+    generation          VARCHAR(255)        NOT NULL,
+    PRIMARY KEY (`id`),
+    UNIQUE INDEX `generation` (`generation`)
+)
+    ENGINE = InnoDB
+    CHARSET = utf8;
