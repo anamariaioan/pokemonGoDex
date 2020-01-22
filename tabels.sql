@@ -19,3 +19,12 @@ CREATE TABLE `pokemon` (
 )
     ENGINE = InnoDB
     CHARSET = utf8;
+
+CREATE TABLE `type` (
+    id                  INT(11) UNSIGNED    NOT NULL AUTO_INCREMENT,
+    type                VARCHAR(255)        NOT NULL,
+    PRIMARY KEY (`id`),
+    UNIQUE INDEX `type` (`type`)
+)
+    ENGINE = InnoDB
+    CHARSET = utf8;
