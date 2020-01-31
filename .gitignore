@@ -26,6 +26,7 @@ Thumbs.db
 \.idea/
 dev_rfc.trc
 .idea/*
+.idea/workspace.xml
 
 # Compiled source #
 ###################
