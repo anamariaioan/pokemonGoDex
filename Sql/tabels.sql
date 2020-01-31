@@ -40,9 +40,9 @@ CREATE TABLE `generation` (
 
 CREATE TABLE `charge_attack` (
     id      INT(11) UNSIGNED    NOT NULL AUTO_INCREMENT,
-    name    VARCHAR(255)        NOT NULL,
+    attack    VARCHAR(255)        NOT NULL,
     PRIMARY KEY (`id`),
-    UNIQUE INDEX `name` (`name`)
+    UNIQUE INDEX `name` (`attack`)
 )
     ENGINE = InnoDB
     CHARSET = utf8;
