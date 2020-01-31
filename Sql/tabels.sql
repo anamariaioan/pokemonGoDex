@@ -39,10 +39,19 @@ CREATE TABLE `generation` (
     CHARSET = utf8;
 
 CREATE TABLE `charge_attack` (
-    id      INT(11) UNSIGNED    NOT NULL AUTO_INCREMENT,
-    attack    VARCHAR(255)        NOT NULL,
+    id          INT(11) UNSIGNED    NOT NULL AUTO_INCREMENT,
+    attack      VARCHAR(255)        NOT NULL,
     PRIMARY KEY (`id`),
     UNIQUE INDEX `name` (`attack`)
+)
+    ENGINE = InnoDB
+    CHARSET = utf8;
+
+CREATE TABLE `fast_attack` (
+     id          INT(11) UNSIGNED    NOT NULL AUTO_INCREMENT,
+     attack      VARCHAR(255)        NOT NULL,
+     PRIMARY KEY (`id`),
+     UNIQUE INDEX `name` (`attack`)
 )
     ENGINE = InnoDB
     CHARSET = utf8;
