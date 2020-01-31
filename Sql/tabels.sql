@@ -41,6 +41,11 @@ CREATE TABLE `generation` (
 CREATE TABLE `charge_attack` (
     id          INT(11) UNSIGNED    NOT NULL AUTO_INCREMENT,
     attack      VARCHAR(255)        NOT NULL,
+    power              INT(11)             NOT NULL,
+    energy             INT(11)             NOT NULL,
+    cooldown           INT(11)             NOT NULL,
+    damage_per_second  INT(11)             NOT NULL,
+    energy_per_second  INT(11)             NOT NULL,
     PRIMARY KEY (`id`),
     UNIQUE INDEX `name` (`attack`)
 )
@@ -48,8 +53,13 @@ CREATE TABLE `charge_attack` (
     CHARSET = utf8;
 
 CREATE TABLE `fast_attack` (
-     id          INT(11) UNSIGNED    NOT NULL AUTO_INCREMENT,
-     attack      VARCHAR(255)        NOT NULL,
+     id                 INT(11) UNSIGNED    NOT NULL AUTO_INCREMENT,
+     attack             VARCHAR(255)        NOT NULL,
+     power              INT(11)             NOT NULL,
+     energy             INT(11)             NOT NULL,
+     cooldown           INT(11)             NOT NULL,
+     damage_per_second  INT(11)             NOT NULL,
+     energy_per_second  INT(11)             NOT NULL,
      PRIMARY KEY (`id`),
      UNIQUE INDEX `name` (`attack`)
 )
